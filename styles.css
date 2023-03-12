@@ -14,7 +14,7 @@
     /* Header Media Queries */
 
     .header .header-content {
-        margin-bottom: -20px;
+        
     }
 
     @media screen and (max-width: 900px) {
@@ -25,7 +25,6 @@
         }
 
         .header .header-content {
-            margin-bottom: -25px;
         }
 
         .header .header-content h2 {
@@ -169,7 +168,7 @@
         }
 
         .header-hero .hero {
-            padding-top: 100px;
+            padding-top: 70px;
             padding-bottom: 100px;
         }
 
@@ -185,6 +184,10 @@
             .hero .hero-txt p {
                 font-size: 15px;
                 padding-bottom: 15px;
+            }
+            .header-hero .hero {
+                padding-top: 65px;
+                padding-bottom: 100px;
             }
         }
     }
