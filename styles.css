@@ -82,7 +82,7 @@
     
         .hero .hero-txt .hero-btn {
             width: 100px;
-            font-size: 12px;
+            font-size: 15px;
         }
     }
 
@@ -211,6 +211,9 @@
         border: 5px solid #3882F6;
         border-radius: 15px;
     }
+    .info .info-content .info-btn {
+        width: 120px;
+    }   
     
     @media screen and (max-width: 900px) {
         .info .info-content {
@@ -237,6 +240,10 @@
             width: 150px;
             border: 5px solid #3882F6;
             border-radius: 15px;
+        }
+        .info .info-content .info-btn {
+            width: 100px;
+            font-size: 15px;
         }
     }
 
@@ -274,6 +281,9 @@
         .info .info-content .box-container .box {
             padding-bottom: 25px;
         }
+        .info .info-content .info-btn {
+            width: 120px;
+        }   
     }
 
     @media screen and (max-width: 600px) {
@@ -347,7 +357,80 @@
             border-radius: 15px;
             margin-bottom: 10px;
         }
-        
+    }
+
+    /* Details Media Queries */
+    .details .detail-content .detail-container {
+        width: 900px;
+    }
+
+    .details .detail-content .detail-container .detail-header {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .details .detail-content .detail-container {
+            width: 600px;
+        }  
+
+        .details .detail-content .detail-container .detail-header {
+            font-size: 28px;
+        }
+
+        .details .detail-content .detail-container .detail-subheader {
+            font-size: 20px;
+        }
+    
+    }
+
+    @media screen and (max-width: 768px) {
+        .details .detail-content .detail-container {
+            width: 500px;
+        }
+
+        .details .detail-content .detail-container .detail-header {
+            font-size: 26px;
+        }
+
+        .details .detail-content .detail-container .detail-subheader {
+            font-size: 18px;
+        }
+
+        .details .detail-content .detail-container .detail-txt {
+            font-size: 16px;
+        }
+       
+    }
+
+    @media screen and (max-width: 600px) {
+        .details .detail-content .detail-container {
+            width: 400px;
+        }
+
+        .details .detail-content .detail-container .detail-header {
+            font-size: 22px;
+        }
+
+        .details .detail-content .detail-container .detail-subheader {
+            font-size: 16px;
+        }
+
+        .details .detail-content .detail-container .detail-txt {
+            font-size: 15px;
+        }
+    
+
+    }
+    @media screen and (max-width: 500px) {
+        .details .detail-content .detail-container {
+            width: 300px;
+        }
+
+        .details .detail-content .detail-container .detail-header {
+            font-size: 20px;
+        }
+    
+
     }
     /* Quote Media Queries */
 
@@ -496,7 +579,7 @@
         }
 
         .cta .blue-container .cta-btn {
-            font-size: 12px;
+            font-size: 15px;
         }
 
         .cta .blue-container .cta-text h2 {
@@ -638,7 +721,7 @@ button:hover, a:hover {
 }
 
 .header-hero, .footer {
-    background-color: #252422;
+    background-color: #1f2937;
 }
 
 .header {
@@ -724,6 +807,11 @@ button:hover, a:hover {
     font-weight: bold;
 }
 
+.hero-btn a, .info-btn a, .cta-btn a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
 .img-container {
     width: 50%;
     display: flex;
@@ -755,7 +843,7 @@ button:hover, a:hover {
 .info-content h2 {
     font-size: 36px;
     font-weight:800;
-    color: #252422;
+    color: #1f2937;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -779,7 +867,7 @@ button:hover, a:hover {
 .subtext {
     padding-top: 10px;
     font-size: 18px;
-    color: #252422;
+    color: #1f2937;
     font-weight: 500;
     text-align: center;
     display: flex;
@@ -803,6 +891,60 @@ button:hover, a:hover {
     color: #1061e4;
 }
 
+.info-btn {
+    background-color: #3882F6;
+    border-radius: 10px;
+    border-color: #3882F6;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    width: 165px;
+    padding: 5px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+
+.detail-content {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 25px;
+    max-width: 1300px;
+}
+
+.detail-header {
+    font-size: 36px;
+    font-weight:800;
+    color: #1f2937;
+    text-align: center;
+}
+
+.detail-subheader {
+    font-size: 22px;
+    font-weight:800;
+    color: #1f2937;
+    text-align: center;
+}
+
+.detail-txt {
+    font-size: 18px;
+    color: #1f2937;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .quotes {
     background-color: #E5E7EB;
@@ -819,7 +961,7 @@ button:hover, a:hover {
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
-    color: #252422;
+    color: #1f2937;
 }
 
 .quotee {
@@ -972,7 +1114,7 @@ button:hover, a:hover {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     #menu-toggle:checked ~ .menu li {
-      border: 1px solid #252422;
+      border: 1px solid #1f2937;
       height: 2.5em;
       padding: 0.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -987,13 +1129,13 @@ button:hover, a:hover {
       background-color: #1a222c;
     }
     .menu > li:not(:last-child) {
-      border-bottom: 1px solid #252422;
+      border-bottom: 1px solid #1f2937;
     }
   }
 
 
   .image-gallery {
-    background-color: #252422;
+    background-color: #1f2937;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1007,8 +1149,8 @@ button:hover, a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
-    color: #252422;
+    font-size: 30px;
+    color: #F9FAF8;
     font-weight: bold;
     margin: 18px;
   }
@@ -1056,7 +1198,7 @@ button:hover, a:hover {
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-  background-color: #252422;
+  background-color: #1f2937;
   }
   
   /* Caption text */
@@ -1086,7 +1228,7 @@ button:hover, a:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #252422;
+  background-color: #1a222c;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -1112,11 +1254,10 @@ button:hover, a:hover {
   
   
   .img-gallery-txt {
-    font-size: 40px;
+    font-size: 26px;
     font-weight: bold;
     display: flex;
     text-align: center;
-    text-decoration: overline;
     justify-content: center;
     align-items: center;
   }
@@ -1145,6 +1286,10 @@ button:hover, a:hover {
       max-width: 350px;
     }
   
+    .img-gallery-txt {
+        font-size: 22px;
+    }
+
     .text {
       color: #FDFFFC;
       font-size: 22px;
