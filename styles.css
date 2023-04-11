@@ -294,6 +294,8 @@
             font-size: 26px;
             padding-top: 45px;
             padding-bottom: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
     
         .info-content .box-container {
@@ -394,6 +396,14 @@
             border: 3px solid #3882F6;
             border-radius: 15px;
             margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .info .info-content h2 {
+            font-size: 18px;
+            padding-top: px;
+            padding-bottom: px;
         }
     }
 
