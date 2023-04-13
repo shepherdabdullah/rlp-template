@@ -1330,6 +1330,10 @@ button:hover, a:hover {
   
   @media (max-width: 600px) {
 
+    .slideshow-container {
+        min-height: 350px;
+      }
+
     .mySlides {
       max-width: 350px;
     }
