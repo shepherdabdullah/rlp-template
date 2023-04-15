@@ -416,6 +416,13 @@
         font-size: 30px;
     }
 
+    @media screen and (max-width: 960px) {
+        .details .detail-content .detail-container {
+            width: 700px;
+        }  
+        
+    }
+
     @media screen and (max-width: 900px) {
         .details .detail-content .detail-container {
             width: 600px;
