@@ -31,6 +31,109 @@
       <div class="info">
         <div class="info-content">
           <h2>Contact</h2>
+          <div class="form-container">
+            <div class="form">
+              <p>
+                For the most accurate quote please include any and all relevant
+                details of your move.
+              </p>
+              <!-- Formspree -->
+              <form action="https://formspree.io/f/xqkjwolp" method="POST">
+                <div class="fields">
+                  <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+                  <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                  </div>
+                  <div class="field half">
+                    <label for="date">Date Needed</label>
+                    <input
+                      type="text"
+                      name="date"
+                      id="date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div>
+                  <div class="field half">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="xxx-xxx-xxxx"
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="service">Service</label>
+                    <select name="service" id="service">
+                      <option value="">- Select Service -</option>
+                      <option value="full">
+                        Full Service(Inlcudes Truck/Trailer)
+                      </option>
+                      <option value="labor">
+                        Labor Only (Load/Unload Your Truck/Trailer/Pod)
+                      </option>
+                      <option value="junk">Junk Removal</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="field half">
+                    <label for="rooms">Rooms</label>
+                    <select name="rooms" id="rooms" required="1">
+                      <option value="" selected="" disabled="">-</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4+">Four or More</option>
+                    </select>
+                  </div>
+                  <div class="field half">
+                    <label for="crew">Crew Size</label>
+                    <select name="crew" id="crew" required="2">
+                      <option value="" selected="" disabled="">-</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four or More</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="details">Details</label>
+                    <textarea
+                      name="details"
+                      id="details"
+                      rows="8"
+                      placeholder="Include any additional or relevant details here"
+                    ></textarea>
+                  </div>
+                  <div class="field half demo">
+                    <input type="checkbox" id="demo-copy" name="demo-copy" />
+                    <label for="demo-copy">Email me a copy</label>
+                  </div>
+                  <div class="field half">
+                    <input type="text" name="_gotcha" style="display: none" />
+                    <input
+                      type="checkbox"
+                      id="demo-human"
+                      name="demo-human"
+                      unchecked
+                    />
+                    <label for="demo-human demo">I am not a robot</label>
+                  </div>
+                </div>
+                <ul class="actions">
+                  <li>
+                    <input type="submit" value="Send Message" class="primary" />
+                  </li>
+                  <li>
+                    <input type="reset" value="Reset" />
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
