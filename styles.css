@@ -1524,3 +1524,222 @@ input[type=text], select, textarea {
             padding-bottom: 10px;
         }
     }
+
+
+/* Features */
+
+.features-container {
+    max-width: 1600px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.25em;
+    border: solid 1px rgba(14, 7, 7, 0.15);
+    background: rgba(6, 6, 6, 0.05);
+    margin: 0 0 2em 0;
+}
+
+    .features section {
+        padding: 3.5em 3em 1em 7em ;
+        width: 50%;
+        border-top: solid 1px rgba(63, 55, 55, 0.15);
+        position: relative;
+    }
+
+        .features section:nth-child(-n + 2) {
+            border-top-width: 0;
+        }
+
+        .features section:nth-child(2n) {
+            border-left: solid 1px rgba(38, 30, 30, 0.15);
+        }
+
+        .features section .icon {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transition-delay: 1s;
+            transform: scale(1);
+            position: absolute;
+            left: 3em;
+            top: 3em;
+            opacity: 1;
+        }
+
+        .features section:nth-child(1) .icon {
+            transition-delay: 0.15s;
+        }
+
+        .features section:nth-child(2) .icon {
+            transition-delay: 0.3s;
+        }
+
+        .features section:nth-child(3) .icon {
+            transition-delay: 0.45s;
+        }
+
+        .features section:nth-child(4) .icon {
+            transition-delay: 0.6s;
+        }
+
+        .features section:nth-child(5) .icon {
+            transition-delay: 0.75s;
+        }
+
+        .features section:nth-child(6) .icon {
+            transition-delay: 0.9s;
+        }
+
+        .features section:nth-child(7) .icon {
+            transition-delay: 1.05s;
+        }
+
+        .features section:nth-child(8) .icon {
+            transition-delay: 1.2s;
+        }
+
+        .features section:nth-child(9) .icon {
+            transition-delay: 1.35s;
+        }
+
+        .features section:nth-child(10) .icon {
+            transition-delay: 1.5s;
+        }
+
+        .features section:nth-child(11) .icon {
+            transition-delay: 1.65s;
+        }
+
+        .features section:nth-child(12) .icon {
+            transition-delay: 1.8s;
+        }
+
+        .features section:nth-child(13) .icon {
+            transition-delay: 1.95s;
+        }
+
+        .features section:nth-child(14) .icon {
+            transition-delay: 2.1s;
+        }
+
+        .features section:nth-child(15) .icon {
+            transition-delay: 2.25s;
+        }
+
+        .features section:nth-child(16) .icon {
+            transition-delay: 2.4s;
+        }
+
+        .features section:nth-child(17) .icon {
+            transition-delay: 2.55s;
+        }
+
+        .features section:nth-child(18) .icon {
+            transition-delay: 2.7s;
+        }
+
+        .features section:nth-child(19) .icon {
+            transition-delay: 2.85s;
+        }
+
+        .features section:nth-child(20) .icon {
+            transition-delay: 3s;
+        }
+
+    .features.inactive section .icon {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .features {
+            display: block;
+        }
+
+            .features section {
+                border-top-width: 1px !important;
+                border-left-width: 0 !important;
+                width: 100%;
+            }
+
+                .features section:first-child {
+                    border-top-width: 0 !important;
+                }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .features section {
+            padding: 2.5em 1.5em 0.1em 5.5em ;
+        }
+
+            .features section .icon {
+                left: 1.5em;
+                top: 2em;
+            }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .features section {
+            padding: 2em 1.5em 0.1em 1.5em ;
+        }
+
+            .features section .icon {
+                left: 0;
+                position: relative;
+                top: 0;
+            }
+    }
+
+    .icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon.major {
+			width: 2.5em;
+			height: 2.5em;
+			display: block;
+			background: #ffffff;
+			border-radius: 100%;
+			color: #1f2937;
+			text-align: center;
+			line-height: 2.5em;
+			margin: 0 0 1.3em 0;
+		}
+
+			.icon.major:before {
+				font-size: 1.25em;
+			}
